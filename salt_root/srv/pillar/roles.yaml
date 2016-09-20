@@ -1,0 +1,13 @@
+demo-production:
+  - nginx
+  - postgres
+  - python3
+  - supervisor
+  - django_demo
+
+demo-staging:
+  - nginx
+  - postgres
+  - python3
+  - supervisor
+  - django_demo

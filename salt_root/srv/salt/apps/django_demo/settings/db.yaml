@@ -1,0 +1,7 @@
+{% set app = 'django_demo' %}
+default:
+  host: localhost
+  user: {{ app }}
+  password: {{ salt['pillar.get']('postgres_private:users:' + app + ':password') }}
+  port: 5433
+  db_name: django_demo

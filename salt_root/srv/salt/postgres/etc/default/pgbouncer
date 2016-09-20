@@ -1,0 +1,5 @@
+# /etc/default/pgbouncer
+
+START=yes
+OPTS="-d /etc/pgbouncer/pgbouncer.ini"
+

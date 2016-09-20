@@ -1,0 +1,5 @@
+default:
+  host: localhost
+  user: postgres
+  port: 5432
+  db_name: demo_db

@@ -1,0 +1,7 @@
+{% set postgres_users = salt['pillar.get']('postgres_private:users', {}) %}
+{% if postgres_users %}
+{% for user, v in postgres_users.iteritems() %}
+"{{ user }}" "{{ v['password'] }}"
+{% endfor %}
+{% endif %}
+

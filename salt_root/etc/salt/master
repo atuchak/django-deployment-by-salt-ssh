@@ -1,0 +1,19 @@
+root_dir: .
+
+file_roots:
+  base:
+    - srv/salt
+
+    # project root
+    - ../
+
+pillar_roots:
+  base:
+    - srv/pillar
+
+
+log_level: warning
+
+state_output: mixed
+
+
